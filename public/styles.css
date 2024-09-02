@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 75rem;
+    margin-inline: auto;
+    margin-block:auto;
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+.title{
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.card-header:hover{
+    background-color: rgba(0, 0, 0,0.1);
+    cursor: pointer;
+}
+
+.card-header:active,.card-header:focus{
+    background-color: rgba(0, 0, 0,0.1);
+    cursor: pointer;
+}
+
+.card-body{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0.5rem;
+}
+
+.card-title{
+    font-weight: 500;
+}
+
+.card-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-title-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.todo p{
+    margin: 0;
+}
+
+.todo-status{
+    border: 1px solid black;
+    padding: 0.2rem;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.add-new-todo{
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.add-new-todo:hover{
+    background-color: rgb(0, 0, 0,0.2);
+}
+
+.add-new-todo:visited{
+    text-decoration: none;
+}
+
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.todo-form input, .todo-form textarea, .todo-form button,.todo-form select{
+    border: 1px solid black;
+}
+
+.todo-form select,.todo-form input,.todo-form textarea{
+    padding: 0.25rem;
+}
+
+.todo-form label{
+    margin-bottom: 0.5rem;
+}
+
+.todo-form label,.todo-form input,.todo-form textarea{
+    display: block;
+    width: 100%;
+}
+.todo-form button{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.todo-form button:hover{
+   background-color: rgba(0, 0, 0,0.2);
+}
+
+.form-error{
+    color: red;
+}
+
+.form-edited{
+    color: green;
+}
+
+.todo-status-pending{
+    background-color: rgb(255, 0, 0,0.1);
+    color:red;
+    font-weight: 500;
+}
+
+.todo-status-progress{
+    background-color: rgb(0, 0, 255,0.1);
+    color: blue;
+    font-weight: 500;
+}
+
+
+.todo-status-done{
+    background-color: rgb(0, 255, 0,0.1);
+    color:green;
+    font-weight: 500;
+}
